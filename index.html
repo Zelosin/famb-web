@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link href="assets/fav.ico" rel="icon">
+
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <div>
+    <header>
+      <nav class="navbar navbar-fixed-top navbar-default">
+        <div class="container">
+          <button type="button" class="navbar-toggle" id="navbar-button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <nav class="navbar-fullscreen" id="navbar-middle">
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <ul class="navbar-fullscreen-links">
+              <li><a href="/text/bonfire" title="">Костёр</a></li>
+              <li><a href="/text/path" title="">Путь</a></li>
+              <li><a href="/text/people" title="">Очень много немного людей</a></li>
+              <li><a href="/text/all" title="">Весь текст</a></li>
+            </ul>
+
+            <div class="footer-container">
+
+              <p>@suseqa</p>
+              <p class="footer-share-icons">
+                <a href="https://vk.com/suseqa" class="fa-icon" title="">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.twitch.tv/suseqa" class="fa-icon" title="">
+                  <i class="fa fa-twitch" aria-hidden="true"></i>
+                </a>
+                <a href="https://t.me/suseqa" class="fa-icon" title="">
+                  <i class="fa fa-telegram" aria-hidden="true"></i>
+                </a>
+                <a href="https://discord.com/invite/3f92hw98PB" class="fa-icon" title="">
+                  <i class="fa fa-cc-discover" aria-hidden="true"></i>
+                </a>
+              </p>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navbarFixedTopAnimation();
+      closeMenuBeforeGoingToPage();
+    });
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navbarToggleSidebar();
+      closeMenuBeforeGoingToPage();
+      navActivePage();
+
+    });
+    window.onload = function(){
+      document.getElementById("navbar-button").click();
+    }
+  </script>
+  <script src="assets/main.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+</body>
+</html>
